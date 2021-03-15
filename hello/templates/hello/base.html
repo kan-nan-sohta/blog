@@ -1,0 +1,19 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'hello/css/style.css' %}">
+</head>
+<body>
+    <img src="{% static 'img/back.png' %}">
+    <h2>
+        <a href="{% url 'blog:index' %}">日記</a>
+        <a href="{% url 'game:index' %}">ゲーム</a>
+        <a href="{% url 'study:index' %}">勉強内容</a>
+    </h2>
+    <h1>kan-nanのブログ</h1>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

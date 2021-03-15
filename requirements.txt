@@ -1,0 +1,6 @@
+django
+gunicorn
+django-heroku
+django-markdownx
+django-storages
+boto3
