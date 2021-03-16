@@ -4,3 +4,4 @@ django-heroku
 django-markdownx
 django-storages
 boto3
+Pillow

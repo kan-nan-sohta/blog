@@ -23,6 +23,8 @@ urlpatterns = [
     path("", include('hello.urls'), name="hello"),
     path("game/", include('game.urls'), name="game"),
     path("study/", include('study.urls'), name="study"),
+    # path("uploadapp/", include('uploadapp.urls'), name="uploadapp"),
+    # 画像アップロード機能は作ってみたけど今の所いらない
     path('markdownx/', include('markdownx.urls')),
     path("db/", hello.db, name="db"),
     path("admin/", admin.site.urls),
