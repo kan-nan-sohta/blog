@@ -2,7 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .forms import DocumentForm
 from .models import Document
-import cv2
+#import cv2
+from PIL import Image
 import numpy as np
 from django.conf import settings
 
@@ -28,10 +29,10 @@ def index(request):
 def img_process(input_path, output_path):
     print(input_path)
     print(output_path)
-    inp = cv2.imread(input_path)
+    inp = Image.open(input_path)
     print(inp)
-    out = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imwrite(output_path, out)
+    out = inp.rotate(90)
+    out.save(output_path, out)
 
 
 
