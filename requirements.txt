@@ -5,5 +5,3 @@ django-markdownx
 django-storages
 boto3
 Pillow
-opencv-python
-opencv-contrib-python
