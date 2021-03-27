@@ -5,3 +5,4 @@ django-markdownx
 django-storages
 boto3
 Pillow
+numpy
