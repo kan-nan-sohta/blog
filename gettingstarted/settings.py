@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "hello",
     "study",
     "game",
+    'abstrans',
     'img_process',
     "uploadapp",
     'markdownx',

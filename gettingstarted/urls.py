@@ -25,6 +25,7 @@ urlpatterns = [
     path("study/", include('study.urls'), name="study"),
     path('img_process/', include('img_process.urls'), name='img_process'),
     path("uploadapp/", include('uploadapp.urls'), name="uploadapp"),
+    path("abstrans/", include('abstrans.urls'), name="abstrans"),
     # 画像アップロード機能は作ってみたけど今の所いらない
     path('markdownx/', include('markdownx.urls')),
     path("db/", hello.db, name="db"),

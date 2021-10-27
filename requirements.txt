@@ -6,3 +6,11 @@ django-storages
 boto3
 Pillow
 numpy
+semanticscholar
+googletrans==4.0.0-rc1
+chromedriver-binary==90.0.4430.24.0
+lxml
+bs4
+chromedriver-binary
+selenium
+django-ipware
